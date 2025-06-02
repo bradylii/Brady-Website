@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.hero {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.projects, .connect {
+  padding: 100px 20px 50px;
+}
+
+.connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.connect ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.connect li a {
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: 2px solid #0073e6;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.connect li a:hover {
+  background-color: #0073e6;
+  color: white;
+}
