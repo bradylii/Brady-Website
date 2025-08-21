@@ -1,33 +1,40 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
-console.log(ProjectCard);
 
 export default function Projects() {
-  const projects = [
+  const fillerProjects = [
     {
-      title: "Hackathon AR Demo",
-      type: "Hackathon",
-      tools: "Unity, C#, ARKit",
-      description: "Built an AR tool for real-time object placement.",
-      media: "https://www.youtube.com/embed/mAeTRCT0qZg"
+      title: "AI Chatbot",
+      type: "Web App",
+      tools: "React, Flask, OpenAI",
+      description: "A chatbot that answers questions with natural language. daskdjasdjask dsakdjaksjdksajdaskljdaskldjsakldjsakldjaskldjaskldjaskldjaskldjaskldjaskdljaskdlasjdkasjdaskldjfkdsajdkasjd aksldjas kdjaskdjaskdjas kdljlas ",
+      media: "https://via.placeholder.com/600x350", // placeholder image
+      link: "https://github.com/example/chatbot"
     },
     {
-      title: "Personal Portfolio",
-      type: "Personal Project",
-      tools: "React, CSS",
-      description: "This very website you're looking at!",
-      media: "/images/portfolio.png"
-    }
+      title: "Portfolio Website",
+      type: "Frontend",
+      tools: "React, Tailwind, Vercel",
+      description: "A chatbot that answers questions with natural language. daskdjasdjask dsakdjaksjdksajdaskljdaskldjsakldjsakldjaskldjaskldjaskldjaskldjaskldjaskdljaskdlasjdkasjdaskldjfkdsajdkasjd aksldjas kdjaskdjaskdjas kdljlas ",
+      media: "https://www.youtube.com/embed/dQw4w9WgXcQ", // placeholder video
+      link: "https://github.com/example/portfolio"
+    },
+    {
+      title: "Data Dashboard",
+      type: "Visualization",
+      tools: "D3.js, Node.js",
+      description: "An interactive dashboard with graphs and real-time updates.",
+      media: "https://via.placeholder.com/600x350",
+      link: "https://github.com/example/dashboard"
+    },
   ];
 
   return (
-    <section>
+    <section className="projects-grid">
       <h2>Projects</h2>
-      <div className="projects-grid">
-        {projects.map((p, i) => (
-          <ProjectCard key={i} {...p} />
-        ))}
-      </div>
+      {fillerProjects.map((proj, i) => (
+        <ProjectCard key={i} {...proj} />
+      ))}
     </section>
   );
 }

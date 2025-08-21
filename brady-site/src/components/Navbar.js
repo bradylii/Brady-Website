@@ -7,6 +7,7 @@ export default function Navbar() {
       <div className="nav-right">
         <ul>
           <Link to="/" className="logo">Home</Link>
+          <li><Link to="/about">About</Link></li>
           <li><Link to="/projects">Projects</Link></li>
           <li><Link to="/experience">Experience</Link></li>
         </ul>

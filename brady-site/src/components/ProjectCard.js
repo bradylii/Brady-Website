@@ -1,5 +1,7 @@
 import React from "react";
-export default function ProjectCard({ title, type, tools, description, media }) {
+import "../ProjectCard.css";
+
+export default function ProjectCard({ title, type, tools, description, media, link }) {
   return (
     <div className="project-card">
       {media && (
@@ -11,9 +13,17 @@ export default function ProjectCard({ title, type, tools, description, media }) 
           )}
         </div>
       )}
-      <h3>{title}</h3>
-      <p><strong>{type}</strong> | {tools}</p>
-      <p>{description}</p>
+      <div className="project-content">
+        <h3 className="project-title">
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            {title}
+          </a>
+        </h3>
+        <p className="project-meta">
+          <strong>{type}</strong> | {tools}
+        </p>
+        <p>{description}</p>
+      </div>
     </div>
   );
 }

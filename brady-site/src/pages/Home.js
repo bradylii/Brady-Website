@@ -3,6 +3,9 @@ import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles"; // or loadSlim for smaller bundle
 
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineDocumentText } from "react-icons/hi"; // for resume icon
+
 export default function Home() {
   const [init, setInit] = useState(false);
 
@@ -51,19 +54,33 @@ export default function Home() {
   return (
     <div className="hero-container">
       <Particles id="tsparticles" options={options} />
-      <section className="hero">
+       <section className="hero">
         <h1 className="hero-title">Brady Li</h1>
         <p className="hero-subtitle">Software Engineer, Researcher, Student</p>
         <p className="hero-subtext">I build realities and explore the minds within</p>
+
+        {/* Icon buttons */}
         <div className="connect-buttons">
-          <a href="https://github.com/bradylii" target="_blank" rel="noopener noreferrer">
-            GitHub
+          <a
+            href="https://github.com/bradylii"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/in/brady-li-78328b23b/" target="_blank" rel="noopener noreferrer">
-            LinkedIn
+          <a
+            href="https://www.linkedin.com/in/brady-li-78328b23b/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
           </a>
-          <a href="https://drive.google.com/file/d/1uz0uT9a0cpNA5SlwJOYT6ai6rVqLm2_m/view?usp=sharing"target="_blank" rel="noopener noreferrer">
-            Resume
+          <a
+            href="https://drive.google.com/file/d/1uz0uT9a0cpNA5SlwJOYT6ai6rVqLm2_m/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <HiOutlineDocumentText />
           </a>
         </div>
       </section>

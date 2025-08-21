@@ -1,0 +1,48 @@
+.experience-grid {
+  padding: 80px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* closer cards */
+}
+
+.experience-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left; /* ✅ not centered */
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.experience-company {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.experience-position {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #8ec5fc;
+  margin-bottom: 8px;
+}
+
+.experience-description {
+  font-size: 0.95rem;
+  opacity: 0.85;
+} 
+
+/* .experience-grid {
+  padding: 100px;
+  display: grid;
+  gap: 30px;
+  max-width: 1000px;
+} */

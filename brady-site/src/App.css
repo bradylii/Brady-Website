@@ -1,10 +1,12 @@
 /* Background: glowing radial gradient */
-body {
+html, body {
   margin: 0;
+  height: 100%;
   font-family: 'Poppins', sans-serif;
   color: white;
   background: radial-gradient(circle at center, #3a0ca3, #1c1c3c 40%, #000000 90%);
-  overflow: hidden;
+  overflow-x: hidden;
+  overscroll-behavior: none; /* ✅ prevents white overscroll glow */
 }
 
 /* Fullscreen container */
@@ -70,29 +72,22 @@ body {
   margin-top: 10px;
 }
 
-/* Buttons */
 .connect-buttons {
-  margin-top: 40px;
+  margin-top: 75px; /* more space below text */
   display: flex;
+  gap: 30px;
   justify-content: center;
-  gap: 20px;
 }
 
 .connect-buttons a {
-  padding: 12px 28px;
-  border-radius: 30px;
-  background: linear-gradient(45deg, #302b63, #5d5dff);
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+  font-size: 2.5rem; /* bigger icons */
+  color: #ffffff;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(93, 93, 255, 0.3);
 }
 
 .connect-buttons a:hover {
-  background: linear-gradient(45deg, #5d5dff, #8ec5fc);
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 8px 20px rgba(93, 93, 255, 0.5);
+  color: #5d5dff; /* glowing hover effect */
+  transform: translateY(-5px) scale(1.1);
 }
 
 .content {
@@ -102,14 +97,14 @@ body {
   text-align: center;
 }
 
-.experience, .project {
-  margin-top: 70px; /* account for fixed navbar */
+.about, .experience, .project {
   padding: 100px;
   text-align: left; /* override center for content-heavy sections */
   max-width: 800px;
 }
 
 .projects-grid {
+  padding: 100px;
   display: grid;
   gap: 30px;
   max-width: 1000px;
