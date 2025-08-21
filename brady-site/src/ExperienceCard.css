@@ -1,11 +1,12 @@
 .experience-grid {
-  padding: 80px;
+  padding: 100px;
   max-width: 800px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 20px; /* closer cards */
 }
+
 
 .experience-card {
   background: rgba(255, 255, 255, 0.05);

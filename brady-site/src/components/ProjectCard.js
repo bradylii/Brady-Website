@@ -13,16 +13,14 @@ export default function ProjectCard({ title, type, tools, description, media, li
           )}
         </div>
       )}
-      <div className="project-content">
-        <h3 className="project-title">
+      <div className="project-info">
+        <h3>
           <a href={link} target="_blank" rel="noopener noreferrer">
             {title}
           </a>
         </h3>
-        <p className="project-meta">
-          <strong>{type}</strong> | {tools}
-        </p>
-        <p>{description}</p>
+        <p><strong>{type}</strong> | {tools}</p>
+        <p className="project-desc">{description}</p>
       </div>
     </div>
   );

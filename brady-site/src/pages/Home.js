@@ -1,22 +1,21 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadFull } from "tsparticles"; // or loadSlim for smaller bundle
-
+import { loadFull } from "tsparticles";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineDocumentText } from "react-icons/hi"; // for resume icon
+import { HiOutlineDocumentText } from "react-icons/hi";
 
-export default function Home() {
+export default function Home({ togglePlay, playing }) {
   const [init, setInit] = useState(false);
 
+  // ✅ only initialize once
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-      await loadFull(engine); // initialize features
-    }).then(() => {
-      setInit(true);
-    });
+      await loadFull(engine);
+    }).then(() => setInit(true));
   }, []);
 
+  // ✅ memoize options so they don’t trigger rerender
   const options = useMemo(
     () => ({
       background: { color: "transparent" },
@@ -46,33 +45,35 @@ export default function Home() {
       },
       detectRetina: true,
     }),
-    []
+    [] // <— super important, no deps
   );
 
-  if (!init) return null; // wait until engine is ready
+  // ✅ memoize the actual component so it persists
+  const ParticlesBackground = useMemo(() => {
+    return init ? <Particles id="tsparticles" options={options} /> : null;
+  }, [init, options]);
 
   return (
     <div className="hero-container">
-      <Particles id="tsparticles" options={options} />
-       <section className="hero">
+      {ParticlesBackground}
+      <section className="hero">
         <h1 className="hero-title">Brady Li</h1>
-        <p className="hero-subtitle">Software Engineer, Researcher, Student</p>
+        <p className="hero-subtitle">Software Engineer, Researcher, Lifelong Learner</p>
         <p className="hero-subtext">I build realities and explore the minds within</p>
 
-        {/* Icon buttons */}
+        <div className="music-player">
+          <p>Music while you explore 💿</p>
+          <button type="button" onClick={togglePlay} className="music-btn">
+            {playing ? "⏸ Pause" : "▶ Play"}
+          </button>
+        </div>
+
+        {/* icons */}
         <div className="connect-buttons">
-          <a
-            href="https://github.com/bradylii"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/bradylii" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
-          <a
-            href="https://www.linkedin.com/in/brady-li-78328b23b/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://www.linkedin.com/in/brady-li-78328b23b/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
           <a
