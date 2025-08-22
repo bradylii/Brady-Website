@@ -87,35 +87,48 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-/* Mobile adjustments for Project Cards */
 @media (max-width: 768px) {
-  .project-card {
-    display: flex;
-    flex-direction: column;
+  .about-card {
+    flex-direction: column !important;
+    text-align: center;
   }
 
-  .project-media {
-    flex: 0 0 auto; /* let it size naturally */
+  .about-media img,
+  .gallery-slide img {
     width: 100%;
     height: auto;
   }
 
+  .about-info {
+    text-align: center;
+  }
+
+  .projects-grid,
+  .about-grid,
+  .experience-grid {
+    padding: 40px 20px;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  /* --- FIX for project cards on mobile --- */
+  .project-media {
+    height: 200px; /* slightly smaller on mobile */
+  }
+
   .project-media img,
   .project-media video {
-    position: absolute;  /* <-- ensures they stack on top of each other */
+    position: absolute;   /* stack on top of each other */
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;        /* <-- fill parent height */
+    height: 100%;
     object-fit: cover;
-    border-radius: 12px;
-    transition: opacity 0.4s ease;
-  }
-
-  .project-info {
-    max-height: none; /* allow full text */
-    margin-top: 15px;
-    text-align: center;
   }
 }
