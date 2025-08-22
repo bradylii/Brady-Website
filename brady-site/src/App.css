@@ -273,19 +273,19 @@ html, body {
 }
 
 
-/* .project-card:hover {
+.project-card:hover {
   transform: scale(1.05);
   box-shadow: 0 12px 25px rgba(0,0,0,0.4);
 } */
 
 
-/* .project-media img,
+
 .project-media iframe {
   width: 100%;
   height: 220px; 
   object-fit: cover;
   border-radius: 12px;
-} */
+}
 
 
 /* Dot navigation */
@@ -378,6 +378,7 @@ html, body {
   border-radius: 30px;
   font-size: 0.9rem;
   color: #8ec5fc;
+  font-weight: bold;
   transition: all 0.3s ease;
 }
 

@@ -49,22 +49,18 @@
   pointer-events: none; /* avoids blocking mouse */
 }
 
+/* Info box */
 .project-info {
   flex: 1;
-  overflow-y: auto;
-  max-height: 220px;
+  max-height: 250px;
   display: flex;
   flex-direction: column;
 
-  /* Hide scrollbar (still scrollable) */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE + Edge */
+  /* Prevent scrollbars */
+  overflow: hidden;
 }
 
-.project-info::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
-}
-
+/* Title link */
 .project-info h3 a {
   color: white;
   text-decoration: none;
@@ -75,7 +71,12 @@
   color: #5d5dff;
 }
 
+/* Description text */
 .project-desc {
   margin-top: 10px;
   line-height: 1.4;
+
+  /* Cut off if too long */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
