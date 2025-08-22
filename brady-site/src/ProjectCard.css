@@ -52,7 +52,7 @@
 /* Info box */
 .project-info {
   flex: 1;
-  max-height: 250px;
+  max-height: 240px;
   display: flex;
   flex-direction: column;
 

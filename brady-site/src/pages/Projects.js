@@ -93,7 +93,7 @@ export default function Projects() {
       tools: "Quantum Computing, LaTeX",
       description: "A review of one of the most famous quantum algorithms that has implications to unravel our digital world. Covering conceptual foundations, mathematical structures, and quantum methodologies.",
       image: "/images/Shors.png", 
-      link: "https://github.com/example/dashboard"
+      link: "/Review_of_Shors_Algorithm_ECSP.pdf"
     },
     
   ];

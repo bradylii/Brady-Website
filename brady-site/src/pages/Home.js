@@ -76,9 +76,9 @@ export default function Home({ togglePlay, playing }) {
           <a href="https://www.linkedin.com/in/brady-li-78328b23b/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
-          <a
-            href="https://drive.google.com/file/d/1uz0uT9a0cpNA5SlwJOYT6ai6rVqLm2_m/view?usp=sharing"
-            target="_blank"
+          <a 
+            href="/Brady_Li_SWE_Resume.pdf"   // ✅ hosted inside your React app (public/pdfs)
+            target="_blank" 
             rel="noopener noreferrer"
           >
             <HiOutlineDocumentText />
