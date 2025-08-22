@@ -126,7 +126,7 @@
   .project-card {
     flex-direction: column !important;
     text-align: center;
-    width: 100%;          /* ✅ stretch full */
+    width: 300px;        /* ✅ stretch full */
     max-width: 100%;      /* ✅ allow full width */
     padding: 20px;
     box-sizing: border-box;
