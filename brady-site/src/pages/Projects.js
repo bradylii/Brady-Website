@@ -15,7 +15,7 @@ export default function Projects() {
       title: "The Stars Below",
       associations: ["XR Master's Course", "Mixed Reality App"],      
       tools: "C#, Unity3D, Blender, Meta All-in-One SDK",
-      description: "An immersive XR game that bridges the realms of AR and VR. Players get lost in a sea of stars world underneath them, flying to collect stars and bring them back to the real world.",
+      description: "An immersive XR game that bridges the realms of AR and VR. Players get lost in a world of stars underneath them, flying to collect stars and bring them back to the real world.",
       image: "/images/StarsPic.jpg",
       video: "/StarsVideo.mp4",
       link: "https://github.com/bradylii/The-Stars-Below"
