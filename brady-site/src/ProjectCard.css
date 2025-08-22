@@ -1,39 +1,68 @@
-.project-card {
-  display: flex;
-  gap: 20px;
-  background: rgba(255,255,255,0.1);
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
+/* Card hover scaling */
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.04);
   box-shadow: 0 12px 25px rgba(0,0,0,0.4);
 }
 
+/* Media wrapper */
 .project-media {
-  flex: 0 0 40%; /* fixed width */
+  position: relative;
+  flex: 0 0 40%; 
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
+/* Both image and video */
 .project-media img,
-.project-media iframe {
+.project-media video {
   width: 100%;
-  height: 220px; /* fixed height */
+  height: 230px;
   object-fit: cover;
   border-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Image always visible */
+.project-media img {
+  z-index: 1;
+  opacity: 1;
+}
+
+/* Video hidden until hover */
+.project-media video {
+  z-index: 2;
+  opacity: 0;
+}
+
+/* Show video on hover */
+.project-video.show {
+  opacity: 1;
+}
+
+.project-video {
+  pointer-events: none; /* avoids blocking mouse */
 }
 
 .project-info {
   flex: 1;
-  overflow-y: auto; /* ✅ if text gets long */
-  max-height: 220px; /* matches media height */
+  overflow-y: auto;
+  max-height: 220px;
   display: flex;
   flex-direction: column;
+
+  /* Hide scrollbar (still scrollable) */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE + Edge */
+}
+
+.project-info::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 .project-info h3 a {

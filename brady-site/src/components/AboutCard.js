@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function AboutCard({ title, text, image, reverse, gallery, className = ""}) {
+export default function AboutCard({ title, children, image, reverse, gallery, className = ""}) {
   const [current, setCurrent] = useState(0);
 
   const nextSlide = () => {
@@ -45,7 +45,7 @@ export default function AboutCard({ title, text, image, reverse, gallery, classN
 
       <div className="about-info">
         <h3>{title}</h3>
-        <p>{text}</p>
+        <p>{children}</p>
       </div>
     </div>
   );

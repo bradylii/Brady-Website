@@ -6,7 +6,7 @@ export default function Experiences() {
     {
       company: "Reality Design Studio",
       position: "Spatial Computing Researcher",
-      description: "Founding member of Northeastern lab focused on AR/VR research under Dr. Wallace Lages. Many projects!"
+      description: "Senior member of Northeastern lab focused on AR/VR research under Dr. Wallace Lages. Many projects!"
     },
     {
       company: "Khoury College of Computer Sciences",
@@ -51,6 +51,7 @@ export default function Experiences() {
   return (
     <section className="experience-grid">
       <h2>Experiences</h2>
+      <p className="hero-subtext">It is the small things you acquire along the way that really make you extrodinary</p>
       {fillerExperiences.map((exp, i) => (
         <ExperienceCard key={i} {...exp} />
       ))}
