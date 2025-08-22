@@ -87,3 +87,29 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* Mobile adjustments for Project Cards */
+@media (max-width: 768px) {
+  .project-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-media {
+    flex: 0 0 auto; /* let it size naturally */
+    width: 100%;
+    height: auto;
+  }
+
+  .project-media img,
+  .project-media video {
+    position: relative;
+    height: 200px; /* keep it consistent */
+  }
+
+  .project-info {
+    max-height: none; /* allow full text */
+    margin-top: 15px;
+    text-align: center;
+  }
+}
