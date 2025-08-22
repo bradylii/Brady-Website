@@ -51,7 +51,7 @@ export default function Experiences() {
   return (
     <section className="experience-grid">
       <h2>Experiences</h2>
-      <p className="hero-subtext">It is the small things you acquire along the way that really make you extrodinary</p>
+      <p className="hero-subtext">It’s the quiet lessons, not just the loud achievements, that shape who we are.</p>
       {fillerExperiences.map((exp, i) => (
         <ExperienceCard key={i} {...exp} />
       ))}

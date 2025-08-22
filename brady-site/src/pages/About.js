@@ -16,7 +16,7 @@ export default function About() {
   return (
     <section className="about-grid">
       <h2>About Me</h2>
-      <p className="hero-subtext">Behind every resume is a story, here is part of mine</p>
+      <p className="hero-subtext">Every career is more than bullet points, here’s the story behind mine.</p>
       <AboutCard title="Hi, I'm Brady!" image="/images/HeadShot.jpg">
         I am a Computer Science student with a minor in Cognitive Psychology at{" "}
         <Highlight>Northeastern University</Highlight>. I specialize in <Highlight>Human-Computer Interaction and Software</Highlight> and have extensive experience in VR/AR technology and research. I'm passionate about pushing the boundaries of technology to create meaningful and engaging user experiences, leading me to learn a variety of rising technologies and studying abroad.
@@ -39,6 +39,12 @@ export default function About() {
           from classical computing from Dr. Andrew Steane, a world-renowned physicist, was fascinating. All these experiences have shaped my perspectives of technology and its power.
       </AboutCard>
 
+      <AboutCard
+        title="My Philosophy and Approach" large>
+          I've been resting up since getting back from Oxford. I guess resting means working on this personal website super late at night and leetcoding. 
+          It can get oddly fun and addicting. I enjoy <Highlight>cooking</Highlight> and am trying to learn how to cook Paella, a dish I loved when I visited Spain. I have been preparing for this upcoming recruiting cycle and am <Highlight>looking for my final co-op and internship</Highlight> before I <Highlight>graduate in April 2027</Highlight>.
+          Don't hesitate to reach out if you have any opportunities or just want to chat about tech, philosophy, food, or anything else!
+      </AboutCard>
 
       <AboutCard
         title="What am I up to now? (as of August 2025)" image="/images/HeadShot.jpg">
