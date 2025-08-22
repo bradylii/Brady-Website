@@ -58,7 +58,7 @@ export default function Projects() {
       associations: ["HackMIT", "Mixed Reality App"],
       tools: "Python, C#, Unity3D, Flask, Webhook, Terra API, Apple Health SDK",
       description: "Letting users dance to their own heart beat! A music therapy app that conforms the music to the user's body and emotions. Exploring possibilities to bring users closer together through shared experiences.",
-      image: "/images/Harmony.jpg",
+      image: "/images/Harmony.JPG",
       link: "github.com/bradylii/Music-by-Biodata"
     },
             {
@@ -75,8 +75,8 @@ export default function Projects() {
       associations: ["MIT Reality Hack", "Mixed Reality App"],
       tools: "Unreal, Blueprints, C++, MR, Meta",
       description: "Learn and practice emergency preparedness guides and tips with a gamified approach. Enabling users to be exposed to dangerous situations and turn life saving decisions into habits.",
-      video: "/ReadyXR.mp4",
-      image: "/images/ReadyXR.png",
+      image: "/images/readyXR.png",
+      video: "/readyXR.mp4",
       link: "https://devpost.com/software/readyxr"
     },
     {

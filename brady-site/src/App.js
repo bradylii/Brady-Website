@@ -31,7 +31,7 @@ function App() {
       <Navbar />
 
       {/* Audio element lives here globally, invisible */}
-      <audio ref={audioRef} src="/Middle Of Nowhere.mp3" loop />
+      <audio ref={audioRef} src="/Middle_of_Nowhere.mp3" loop />
 
       <main className="content">
         <Routes>

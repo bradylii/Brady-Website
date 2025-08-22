@@ -3,13 +3,13 @@ import Highlight from "../components/Highlight";
 
 export default function About() {
   const studyAbroadGallery = [
-    { src: "/images/SeattleHike.jpg", caption: "Hiking Wallace Lake in Seattle" },
-    { src: "/images/OxDinner.jpg", caption: "Formal dinner at University of Oxford" },
-    { src: "/images/Baking.jpeg", caption: "Baking class in Belgium" },
-    { src: "/images/NATO.jpg", caption: "Visiting NATO headquarters in Belgium" },
-    { src: "/images/SeattleMicrosoft.jpg", caption: "Visiting Microsoft Technology Center in Seattle" },
+    { src: "/images/SeattleHike.JPG", caption: "Hiking Wallace Lake in Seattle" },
+    { src: "/images/OxDinner.JPG", caption: "Formal dinner at University of Oxford" },
+    { src: "/images/Baking.JPEG", caption: "Baking class in Belgium" },
+    { src: "/images/NATO.JPG", caption: "Visiting NATO headquarters in Belgium" },
+    { src: "/images/SeattleMicrosoft.JPG", caption: "Visiting Microsoft Technology Center in Seattle" },
     { src: "/images/OxfordGroup.jpg", caption: "Late night bite at University of Oxford" },
-    { src: "/images/BelgiumMicrosoft.jpg", caption: "Visiting Microsoft in Belgium" },
+    { src: "/images/BelgiumMicrosoft.JPG", caption: "Visiting Microsoft in Belgium" },
 
   ];
 
@@ -51,7 +51,7 @@ export default function About() {
       </AboutCard>
 
       <AboutCard
-        title="What am I up to now? (as of August 2025)" image="/images/noodles.jpg">
+        title="What am I up to now? (as of August 2025)" image="/images/noodles.JPG">
           I've been resting up since getting back from Oxford. I guess resting means working on this personal website super late at night and leetcoding. 
           It can get oddly fun and addicting. I enjoy <Highlight>cooking</Highlight> and am trying to learn how to cook Paella, a dish I loved when I visited Spain. I recently discovered a great noodle spot near home (Quincy MA).
           <br /><br />
