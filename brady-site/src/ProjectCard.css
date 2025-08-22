@@ -88,18 +88,48 @@
   text-overflow: ellipsis;
 }
 
+.project-associations {
+  margin: 5px 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.projects-grid {
+  padding: 100px;
+  display: grid;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto; /* center nicely */
+  
+}
+
+.project-card {
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  text-align: left;
+  display: flex;
+  gap: 25px;
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 /* Mobile adjustments for Project Cards */
 @media (max-width: 768px) {
+  .projects-grid {
+    padding: 20px;        /* ✅ smaller padding, full width */
+    gap: 20px;
+    max-width: 100%;      /* ✅ remove the 1000px cap */
+  }
+
   .project-card {
-    display: flex;
     flex-direction: column !important;
     text-align: center;
     width: 300px;        /* take full width of container */
     max-width: 100%;    /* no squeeze */
     padding: 0 10px;    /* safe breathing space */
     box-sizing: border-box;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .project-media {
@@ -110,7 +140,10 @@
 
   .project-media img {
     position: relative;
-    height: 200px; /* keep media consistent */
+    width: 100%;
+    height: auto;
+    max-height: 220px; /* ✅ keeps consistency */
+    object-fit: cover;
   }
 
   .project-media video {
@@ -126,35 +159,9 @@
 
   .project-info {
     max-height: none; 
-    max-width: 100%;    /* let text fill space */
+    max-width: 100%;    
     margin-top: 15px;
     text-align: center;
-    padding: 0 5px;     /* prevent edge clipping */
+    padding: 0 5px;       /* ✅ subtle padding so text doesn’t hug edges */
   }
-}
-
-.project-associations {
-  margin: 5px 0 10px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-
-.projects-grid {
-  padding: 100px;
-  display: grid;
-  gap: 40px;
-  max-width: 1000px;
-}
-
-.project-card {
-  padding: 200px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  text-align: left;
-  display: flex;
-  gap: 25px;
-  background: rgba(255,255,255,0.1);
-  padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
