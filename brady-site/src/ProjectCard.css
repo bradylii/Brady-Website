@@ -96,11 +96,9 @@
   }
 
   .project-media {
-    position: relative;
+    flex: 0 0 auto; /* let it size naturally */
     width: 100%;
-    height: 230px; /* fixed height for both */
-    overflow: hidden;
-    border-radius: 12px;
+    height: auto;
   }
 
   .project-media img,
