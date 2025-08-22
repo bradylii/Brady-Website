@@ -42,14 +42,15 @@ export default function ProjectCard({
 
         {/* Always render video if it exists */}
         {video && (
-            <video
+          <video
             src={video}
+            preload="auto"
             autoPlay
             loop
             muted
             playsInline
             className={`project-video ${hovered ? "show" : ""}`}
-            />
+          />
         )}
     </div>
 

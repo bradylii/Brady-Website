@@ -4,6 +4,12 @@
   box-shadow: 0 12px 25px rgba(0,0,0,0.4);
 }
 
+.project-card {
+  transform: scale(1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
 /* Media wrapper */
 .project-media {
   position: relative;
@@ -46,8 +52,9 @@
 }
 
 .project-video {
-  pointer-events: none; /* avoids blocking mouse */
+  transition: opacity 0.4s ease;
 }
+
 
 /* Info box */
 .project-info {

@@ -43,9 +43,9 @@ export default function About() {
         title="My Philosophy and Approach" large>
           Here are some key principles I strive to follow:
           <br /><br />
-          <Highlight>1. Self-awareness and determination are a powerful combination: </Highlight> Knowing where you are lacking and having the determination and plan to improve it is a superpower. Being able to see your weaknesses is the first step towards growth.
+          <Highlight>1. The finest treasures are hidden within challenge and doubt: </Highlight> From social gatherings to complex projects, the most valuable experiences often come from pushing through discomfort and uncertainty. This is where growth, learning, and new experiences lie.
           <br /><br />
-          <Highlight>2. Things will come at you; you can control your reaction: </Highlight> This is something I am constantly trying to remind myself. Instead of coping, experience it fully and let it pass through you. The faster you can recognize this, the faster you can move on and focus on what matters.
+          <Highlight>2. Let them: </Highlight> This is something I am constantly trying to remind myself. Stop trying to control others and instead focus on what you can control: your own actions, reactions, and boundaries. Acknowledge situations and behaviors outside of your control and choose not to react with judgment or attempts to change others. This mindset is anxiety freeing and helps me focus on what matters.
           <br /><br />
           <Highlight>3. Try, then ask: </Highlight> Over my years as a student and mentor, I've learned the importance of trying first in order to formulate a strong and effective question. It allows you to push for a more helpful answer and benefits both parties. There are no stupid questions, but there are lazy ones.
       </AboutCard>

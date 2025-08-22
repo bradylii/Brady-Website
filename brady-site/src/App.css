@@ -365,6 +365,37 @@ html, body {
   transform: scale(1.01);
 }
 
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .about-card {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .about-media img,
+  .gallery-slide img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-info {
+    text-align: center;
+  }
+
+  .projects-grid,
+  .about-grid,
+  .experience-grid {
+    padding: 40px 20px;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+}
 
 
 

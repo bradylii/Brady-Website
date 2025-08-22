@@ -1,6 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function AboutCard({ title, children, image, reverse, gallery, className = ""}) {
+
+    useEffect(() => {
+    if (gallery) {
+      gallery.forEach((item) => {
+        const img = new Image();
+        img.src = item.src;
+      });
+    }
+  }, [gallery]);
+
   const [current, setCurrent] = useState(0);
 
   const nextSlide = () => {
@@ -10,12 +20,13 @@ export default function AboutCard({ title, children, image, reverse, gallery, cl
   const prevSlide = () => {
     setCurrent((prev) => (prev - 1 + gallery.length) % gallery.length);
   };
+  
 
   return (
     <div className={`about-card ${reverse ? "reverse" : ""} ${className}`}>
       {image && !gallery && (
         <div className="about-media">
-          <img src={image} alt={title} />
+          <img src={image} alt={title} loading="eager" />
         </div>
       )}
 
