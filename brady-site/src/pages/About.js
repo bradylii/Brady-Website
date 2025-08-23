@@ -7,7 +7,7 @@ export default function About() {
     { src: "/images/OxDinner.JPG", caption: "Formal dinner at University of Oxford" },
     { src: "/images/Baking.JPEG", caption: "Baking class in Belgium" },
     { src: "/images/NATO.JPG", caption: "Visiting NATO headquarters in Belgium" },
-    { src: "/images/SeattleMicrosoft.JPG", caption: "Visiting Microsoft Technology Center in Seattle" },
+    { src: "/images/SeattleMicrosoft.JPG", caption: "Visiting Microsoft Tech Center in Seattle" },
     { src: "/images/OxfordGroup.jpg", caption: "Late night bite at University of Oxford" },
     { src: "/images/BelgiumMicrosoft.JPG", caption: "Visiting Microsoft in Belgium" },
 
