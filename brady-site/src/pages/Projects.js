@@ -49,7 +49,7 @@ export default function Projects() {
       title: "AR Art Gallery",
       associations: ["67th HFES Conference Demo", "New Music Blacksburg Concert"],
       tools: "Vuforia image tracking, C#, Unity3D, HoloLens 2",
-      description: "A more immersive way of experiencing art by bringing each piece to life. Using audio and image tracking to create unique experiences for each piece of art, while keeping the focus on the piece. (GitLab unpon request)",
+      description: "A more immersive way of experiencing art by bringing each piece to life. Using audio and image tracking to create unique experiences for each piece of art, while keeping the focus on the piece.",
       image: "/images/Painting.png", 
       video: "/Painting.MOV",
     },
