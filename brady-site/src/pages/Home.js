@@ -73,11 +73,11 @@ export default function Home({ togglePlay, playing }) {
           <a href="https://github.com/bradylii" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/in/brady-li-78328b23b/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/brady-li" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
           <a 
-            href="/Brady_Li_SWE_Resume.pdf"   // ✅ hosted inside your React app (public/pdfs)
+            href="/Brady_Li_SWE_Resume.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
           >
