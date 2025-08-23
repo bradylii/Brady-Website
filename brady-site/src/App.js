@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import Connect from "./pages/Connect";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const audioRef = useRef(null);
@@ -45,6 +46,7 @@ function App() {
           <Route path="/connect" element={<Connect />} />
         </Routes>
       </main>
+      <Analytics />
     </div>
   );
 }
