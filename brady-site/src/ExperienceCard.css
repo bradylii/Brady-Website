@@ -24,7 +24,7 @@
 
 .experience-position {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: bold;
   color: #8ec5fc;
   margin-bottom: 8px;
 }
@@ -41,16 +41,3 @@
   max-width: 1000px;
 } */
 
-.project-associations {
-  margin: 5px 0 10px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-
-.projects-grid {
-  padding: 100px;
-  display: grid;
-  gap: 40px;
-  max-width: 1000px;
-}

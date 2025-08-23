@@ -21,7 +21,7 @@ export default function About() {
         I am a Computer Science student with a minor in Cognitive Psychology at{" "}
         <Highlight>Northeastern University</Highlight>. I specialize in <Highlight>Human-Computer Interaction and Software</Highlight> and have extensive experience in VR/AR technology and research. I'm passionate about pushing the boundaries of technology to create meaningful and engaging user experiences, leading me to learn a variety of emerging technologies and study abroad.
         <br /><br />
-        Beyond my technical experience, as a first-gen student, I have worked in food service, math tutoring, offices, leading orientations, and club leadership. My resolve to continue to work towards my goals and my diverse range of skills and perspectives are my strong suits!
+        Beyond my technical experience, as a first-gen student, I have worked in food service, math tutoring, offices, leading orientations, and club leadership. My resolve to continue to work towards my goals and my diverse range of skills and perspectives make me!
       </AboutCard>
 
       <AboutCard

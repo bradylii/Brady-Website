@@ -2,9 +2,13 @@
 html, body {
   margin: 0;
   height: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: white;
-  background: radial-gradient(circle at center, #3a0ca3, #1c1c3c 40%, #000000 90%);
+  background: radial-gradient(circle at center,
+    #0f172a,   /* slate navy */
+    #312e81 40%, /* indigo core */
+    #000000 90% /* black */
+  );
   overflow-x: hidden;
   overscroll-behavior: none; /* ✅ prevents white overscroll glow */
 }
@@ -177,10 +181,17 @@ html, body {
 .experience-grid h2,
 .projects-grid h2 {
   font-size: 2.5rem;
+  font-weight: bold;
   margin-bottom: 20px;
   background: linear-gradient(90deg, #8ec5fc, #e0c3fc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.about-info h2, 
+.about-info h3 {
+  margin-top: 5px;     /* ✅ remove default extra space above header */
+  margin-bottom: 20px;
 }
 
 .experience-grid {
