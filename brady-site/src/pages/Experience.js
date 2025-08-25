@@ -22,7 +22,7 @@ export default function Experiences() {
     {
       company: "Northeastern Virtual Reality",
       position: "President and Tech Lead",
-      description: "Transformed club with Agile infastructure, 6x increase in tech supply, workshops, gamenights, speaker events."
+      description: "Transformed club with Agile infrastructure, 6x increase in tech supply, workshops, gamenights, speaker events."
     },
     {
       company: "Flow Fitness",
