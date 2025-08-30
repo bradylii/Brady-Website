@@ -1,5 +1,6 @@
 import AboutCard from "../components/AboutCard";
 import Highlight from "../components/Highlight";
+import NasaApod from "../components/NasaApod";
 
 export default function About() {
   const studyAbroadGallery = [
@@ -58,6 +59,26 @@ export default function About() {
           I have also been preparing for this upcoming recruiting cycle and am <Highlight>looking for my final co-op and internship</Highlight> before I <Highlight>graduate in April 2027</Highlight>.
           Don't hesitate to reach out if you have any opportunities or just want to chat about tech, philosophy, food, or anything else!
       </AboutCard>
+      <NasaApod>
+        {({ title, date, explanation, url, mediaType }) => (
+          <AboutCard title="NASA Picture of the Day" image={mediaType === "image" ? url : null}>
+            <p>Playing with the NASA Open API 🚀 It changes at around 7–8 PM EST</p>
+            {mediaType === "video" ? (
+              <iframe
+                src={url}
+                title={title}
+                className="nasa-video"
+                frameBorder="0"
+                allow="encrypted-media"
+                allowFullScreen
+              />
+            ) : null}
+            <p><Highlight>{`${title} (${date})`}</Highlight>
+              <br /><em>"{explanation}"</em>
+            </p>
+          </AboutCard>
+        )}
+      </NasaApod>
     </section>
   );
 }
