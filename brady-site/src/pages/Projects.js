@@ -45,13 +45,14 @@ export default function Projects() {
       image: "/images/website.png", 
       link: "https://github.com/bradylii/Brady-Website"
     },
-        {
-      title: "AR Art Gallery",
-      associations: ["67th HFES Conference Demo", "New Music Blacksburg Concert"],
-      tools: "Vuforia image tracking, C#, Unity3D, HoloLens 2",
-      description: "A more immersive way of experiencing art by bringing each piece to life. Using audio and image tracking to create unique experiences for each piece of art, while keeping the focus on the piece.",
-      image: "/images/Painting.png", 
-      video: "/Painting.MOV",
+    {
+      title: "WizardVR",
+      associations: ["NUVR Project", "VR Game", "Tech Lead"],
+      tools: "Unity3D, C#, Meta All-in-One SDK, Blender",
+      description: "A VR game MVP where players fight their way through a maze of monsters by casting spells and using items they find along the way. Consisting of game mechanics and abstract level design.",
+      image: "/images/wizardVR.png",
+      video: "/wizardVR.mp4",
+      link: "https://github.com/bradylii/WizardVR/tree/main"
     },
             {
       title: "HARMONY",
@@ -60,6 +61,15 @@ export default function Projects() {
       description: "Letting users dance to their own heart beat! A music therapy app that conforms the music to the user's body and emotions. Exploring possibilities to bring users closer together through shared experiences.",
       image: "/images/Harmony.JPG",
       link: "github.com/bradylii/Music-by-Biodata"
+    },
+
+        {
+      title: "AR Art Gallery",
+      associations: ["67th HFES Conference Demo", "New Music Blacksburg Concert"],
+      tools: "Vuforia image tracking, C#, Unity3D, HoloLens 2",
+      description: "A more immersive way of experiencing art by bringing each piece to life. Using audio and image tracking to create unique experiences for each piece of art, while keeping the focus on the piece.",
+      image: "/images/Painting.png", 
+      video: "/Painting.MOV",
     },
             {
       title: "LightEmAll",
