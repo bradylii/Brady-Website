@@ -61,7 +61,7 @@ export default function About() {
       </AboutCard>
       <NasaApod>
         {({ title, date, explanation, url, mediaType }) => (
-          <AboutCard title="NASA Picture of the Day" image={mediaType === "image" ? url : null}>
+          <AboutCard title="NASA Picture of the Day" reverse image={mediaType === "image" ? url : null}>
             <p>Playing with the NASA Open API 🚀 It changes at 12 AM EST</p>
             {mediaType === "video" ? (
               <iframe
