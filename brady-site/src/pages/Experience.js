@@ -3,6 +3,11 @@ import ExperienceCard from "../components/ExperienceCard";
 
 export default function Experiences() {
   const fillerExperiences = [
+        {
+      company: "Handshake AI",
+      position: "AI Research Fellow",
+      description: "Contract work to refine real AI models and applications through validations and testing."
+    },
     {
       company: "Reality Design Studio",
       position: "Spatial Computing Researcher",
