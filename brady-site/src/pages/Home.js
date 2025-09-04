@@ -5,7 +5,7 @@ import { loadFull } from "tsparticles";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineDocumentText } from "react-icons/hi";
 
-export default function Home({ togglePlay, playing }) {
+export default function Page({ togglePlay, playing }) {
   const [init, setInit] = useState(false);
 
   // ✅ only initialize once
@@ -44,6 +44,28 @@ export default function Home({ togglePlay, playing }) {
         },
       },
       detectRetina: true,
+
+      // ✅ reduce particles automatically on smaller screens
+      responsive: [
+        {
+          maxWidth: 768,
+          options: {
+            particles: {
+              number: { value: 30 },
+              links: { distance: 100 },
+            },
+          },
+        },
+        {
+          maxWidth: 480,
+          options: {
+            particles: {
+              number: { value: 20 },
+              links: { distance: 80 },
+            },
+          },
+        },
+      ],
     }),
     [] // <— super important, no deps
   );
