@@ -5,7 +5,7 @@ import { loadFull } from "tsparticles";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineDocumentText } from "react-icons/hi";
 
-export default function Page({ togglePlay, playing }) {
+export default function Home({ togglePlay, playing }) {
   const [init, setInit] = useState(false);
 
   // ✅ only initialize once
