@@ -407,7 +407,7 @@ html, body {
   }
 
   .music-player {
-    bottom: 20px; /* less padding */
+    bottom: 40px; /* less padding */
   }
 
   .music-player p {
