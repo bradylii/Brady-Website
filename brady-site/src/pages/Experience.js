@@ -37,7 +37,7 @@ export default function Experiences() {
     {
       company: "Northeastern University",
       position: "Orientation Leader",
-      description: "Supported Foundation Year students, a first year program designed for first-gen Boston high schoolers."
+      description: "Supported Foundation Year students, a first year program designed for predominantly first-gen Boston high schoolers."
     },
     {
       company: "The Calculus Project",
