@@ -4,12 +4,13 @@ import ProjectCard from "../components/ProjectCard";
 export default function Projects() {
   const fillerProjects = [
     {
-      title: "VR Cybersickness (link soon!)",
+      title: "VR Cybersickness",
       associations: ["First Author IEEE ISMAR Conference Paper 2025", "Research Project"],
       tools: "Unity3D, C#, Python, LaTex, User Studies",
       description: "Researching ways to predict and mitigate motion sickness in VR. Developed and managed a 50+ participant study consisting of roller coaster and psychological tests in VR.",
       image: "/images/CyberPaper.png", 
       video: "/Paper.mp4",
+      link: "/ISMAR_Paper.pdf"
     },
     {
       title: "The Stars Below",
@@ -30,12 +31,13 @@ export default function Projects() {
       link: "https://github.com/bradylii/CONTEXT"
     },
     {
-      title: "Eye Tracking and Scene Visualizer (link soon!)",
+      title: "Eye Tracking and Scene Visualizer",
       associations: ["Co-Author IEEE ISMAR Poster 2025", "Research Project"],      
       tools: "Unity3D, C#, Python, CSV data, LaTex",
       description: "A 3D visualization tool for scene recontruction with eye tracking data, allowing analysis of user behavior and outlier detection to better understand connection to cybersickness.",
       image: "/images/eyetracking.png",
-      video: "/Empty Room.mp4"
+      video: "/Empty Room.mp4",
+      link: "/ISMAR_Poster_Paper.pdf"
     },
       {
       title: "Personal Website",

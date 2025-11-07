@@ -23,7 +23,7 @@ export default function NasaApod({ children }) {
     fetchApod();
   }, []);
 
-  if (loading) return <p>Loading NASA Picture of the Day...</p>;
+  if (loading) return <p>NASA Picture of the Day API is down at the moment!</p>;
   if (error) return <p>Error: {error}</p>;
 
   // Let the parent decide how to display the info

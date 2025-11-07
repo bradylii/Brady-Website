@@ -3,7 +3,12 @@ import ExperienceCard from "../components/ExperienceCard";
 
 export default function Experiences() {
   const fillerExperiences = [
-        {
+    {
+      company: "Meta",
+      position: "Software Engineer Intern",
+      description: "Incoming summer 2026 in the HQ (Menlo Park)!"
+    },
+    {
       company: "Handshake AI",
       position: "AI Research Fellow",
       description: "Contract work to refine real AI models and applications through validations and testing."
