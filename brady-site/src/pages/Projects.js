@@ -21,6 +21,24 @@ export default function Projects() {
       video: "/StarsVideo.mp4",
       link: "https://github.com/bradylii/The-Stars-Below"
     },
+            {
+      title: "CampusBuzz",
+      associations: ["SWE Group Project", "Full-Stack"],      
+      tools: "TypeScript, React, MongoDB, Render, GitHub Actions",
+      description: "A centralized club event discovery platform connecting students, clubs, and school admins. Allowing email notifications, personalized event reccommendation, admin dashboard and management.",
+      image: "/images/campusbuzz.png",
+      // video: "/ContextVideo.mp4", 
+      link: "https://cs4530-f25-504.onrender.com"
+    },
+        {
+      title: "Eye Tracking and Scene Visualizer",
+      associations: ["Co-Author IEEE ISMAR Poster 2025", "Research Project"],      
+      tools: "Unity3D, C#, Python, CSV data, LaTex",
+      description: "A 3D visualization tool for scene recontruction with eye tracking data, allowing analysis of user behavior and outlier detection to better understand connection to cybersickness.",
+      image: "/images/eyetracking.png",
+      video: "/Empty Room.mp4",
+      link: "/ISMAR_Poster_Paper.pdf"
+    },
         {
       title: "CONTEXT",
       associations: ["Belgium Study Abroad", "Full-Stack"],      
@@ -31,23 +49,6 @@ export default function Projects() {
       link: "https://github.com/bradylii/CONTEXT"
     },
     {
-      title: "Eye Tracking and Scene Visualizer",
-      associations: ["Co-Author IEEE ISMAR Poster 2025", "Research Project"],      
-      tools: "Unity3D, C#, Python, CSV data, LaTex",
-      description: "A 3D visualization tool for scene recontruction with eye tracking data, allowing analysis of user behavior and outlier detection to better understand connection to cybersickness.",
-      image: "/images/eyetracking.png",
-      video: "/Empty Room.mp4",
-      link: "/ISMAR_Poster_Paper.pdf"
-    },
-      {
-      title: "Personal Website",
-      associations: ["Frontend"],
-      tools: "React, JavaScript, CSS, HTML, Node.js, Vercel",
-      description: "The site you are on right now! A personal portfolio to showcase my projects, experiences, and skills. This site allows me to show you the person behind the one page resume!",
-      image: "/images/website.png", 
-      link: "https://github.com/bradylii/Brady-Website"
-    },
-    {
       title: "WizardVR",
       associations: ["NUVR Project", "VR Game", "Tech Lead"],
       tools: "Unity3D, C#, Meta All-in-One SDK, Blender",
@@ -55,6 +56,14 @@ export default function Projects() {
       image: "/images/wizardVR.png",
       video: "/wizardVR.mp4",
       link: "https://github.com/bradylii/WizardVR/tree/main"
+    },
+          {
+      title: "Personal Website",
+      associations: ["Frontend"],
+      tools: "React, JavaScript, CSS, HTML, Node.js, Vercel",
+      description: "The site you are on right now! A personal portfolio to showcase my projects, experiences, and skills. This site allows me to show you the person behind the one page resume!",
+      image: "/images/website.png", 
+      link: "https://github.com/bradylii/Brady-Website"
     },
             {
       title: "HARMONY",
