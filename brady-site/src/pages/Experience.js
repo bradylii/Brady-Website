@@ -6,7 +6,7 @@ export default function Experiences() {
     {
       company: "Meta",
       position: "Software Engineer Intern",
-      description: "Incoming summer 2026 in the HQ (Menlo Park)!"
+      description: "Incoming 2026 in the HQ (Menlo Park)!"
     },
     {
       company: "Handshake AI",
