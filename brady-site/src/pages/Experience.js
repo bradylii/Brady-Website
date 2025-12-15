@@ -3,11 +3,11 @@ import ExperienceCard from "../components/ExperienceCard";
 
 export default function Experiences() {
   const fillerExperiences = [
-    {
-      company: "Meta",
-      position: "Software Engineer Intern",
-      description: "Incoming 2026 in the HQ (Menlo Park)!"
-    },
+    // {
+    //   company: "Meta",
+    //   position: "Software Engineer Intern",
+    //   description: "Incoming 2026 in the HQ (Menlo Park)!"
+    // },
     {
       company: "Handshake AI",
       position: "AI Research Fellow",
