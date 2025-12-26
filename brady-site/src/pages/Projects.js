@@ -23,7 +23,7 @@ export default function Projects() {
     },
             {
       title: "CampusBuzz",
-      associations: ["SWE Group Project", "Full-Stack"],      
+      associations: ["SWE Capstone", "Full-Stack"],      
       tools: "TypeScript, React, MongoDB, Render, GitHub Actions",
       description: "A centralized club event discovery platform connecting students, clubs, and school admins. Allowing email notifications, personalized event reccommendation, admin dashboard and management.",
       image: "/images/campusbuzz.png",
