@@ -25,7 +25,7 @@ export default function Projects() {
       title: "CampusBuzz",
       associations: ["SWE Capstone", "Full-Stack"],      
       tools: "TypeScript, React, MongoDB, Render, GitHub Actions",
-      description: "A centralized club event discovery platform connecting students, clubs, and school admins. Allowing email notifications, personalized event reccommendation, admin dashboard and management.",
+      description: "A centralized club event discovery platform connecting students, clubs, and school admins. Allowing email notifications, personalized event recommendation, admin dashboard and management.",
       image: "/images/campusbuzz.png",
       // video: "/ContextVideo.mp4", 
       link: "https://cs4530-f25-504.onrender.com"
